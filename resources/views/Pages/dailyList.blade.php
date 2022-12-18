@@ -18,41 +18,45 @@ Daily List
                         <img src="./img/note.svg" class="img-fluid w-50 h-50" alt="">
                     </div>
                     <div class="col-md p-3">
-                        <h2 class="display-5 text-info ">This Page to view your List</h2>
+                        <h2 class="display-5 text-info " >  View Your Note</h2>
                         <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quod placeat quo odit, dignissimos labore minima laboriosam odio eum atque sint, quam debitis harum. Suscipit eius officiis illum accusamus amet!</p>
-                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, alias.</p>
                     </div>
                 </div>
             </div>
         </section>
         </section>
-        <section class="container-fluid">
-            <table class="table table-dark table-striped-columns">
-                <thead>
-                <tr class="text-center">
-                    <th>Id</th>
-                    <th>Title</th>
-                    <th>Create</th>
-                    <th>Instructions</th>
-                </tr>
-                </thead>
-                @foreach($tasks as $task)
-                    <tbody>
-                    <tr class="table-active">
-{{--                       <td>{{$task->id}}</td>--}}
-                        <td class="align-center">
-                            <ul><li></li></ul>
-                        </td>
-                        <td>{{$task->title}}</td>
-                        <td>{{$task->created_at}}</td>
-                        <td>
-                            <a href="{{route('task.show',$task->id)}}" class="btn btn-info px-3 mx-3">view</a>
-{{--                            <input type="checkbox"  />--}}
-                        </td>
-                    </tr>
-                    </tbody>
-                @endforeach
-            </table>
+        <section class="container-fluid mb-5">
+
+    @foreach($tasks as $task)
+        <section class="container mb-2">
+            <div style="border: 1px solid ; border-radius: 5px 5px 20px 5px">
+                <div class="bg-dark text-light text-center">
+                    <h2 class="text-primary">Notes</h2>
+                </div>
+                <div class="px-2">
+                    <h5  style="font-weight: 400 ; font-size: 2em ; "> Title: <span class="text-primary">{{$task->title}}</span> </h5>
+                    <hr>
+                </div>
+                    <div class="px-2">
+                        <h5>Instructions :</h5>
+                        <div class="mb-3 px-3">
+                            <a href="{{route('task.show',$task->id)}}" class="btn btn-info ">view</a>
+                            <a href="{{route('task.edit' , $task->id)}}" class="btn btn-warning  ">Edit</a>
+                            <form style="display: inline-block" action="{{route('task.destroy',$task->id)}}" method="post">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="btn btn-danger ">Delete</button>
+                            </form>
+                            <hr>
+                        </div>
+                    </div>
+                <div class="px-2 mb-2">
+                   <p class="text-primary">Created Time : <span class="text-danger">{{$task->created_at}}</span></p>
+                </div>
+
+            </div>
+        </section>
+    @endforeach
         </section>
 
 

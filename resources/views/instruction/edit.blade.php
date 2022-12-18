@@ -19,9 +19,9 @@
                         <img src="/img/edit.svg" class="img-fluid w-50 h-50" alt="">
                     </div>
                     <div class="col-md p-3">
-                        <h2 class="display-5 text-info ">This Page to Edit your List</h2>
+                        <h2 class="display-5 text-info "> Edit Your Note </h2>
                         <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quod placeat quo odit, dignissimos labore minima laboriosam odio eum atque sint, quam debitis harum. Suscipit eius officiis illum accusamus amet!</p>
-                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, alias.</p>
+
                     </div>
                 </div>
             </div>
@@ -33,36 +33,40 @@
             @csrf
             @method('PUT')
 
-            <div class="mb-3">
-                <label for="title" class="form-label lead">Title</label> <i class="bi bi-pencil-square"></i>
-                <input type="text" class="form-control w-50" id="title" name="title"  value="{{$task->title}}">
-            </div>
-            <div class="mb-3">
-                <label for="body" class="form-label lead">Task Details</label>
-                <textarea class="form-control" id="body" rows="3" name="body" >{{$task->body}}</textarea>
-            </div>
-            <div class="w-25 mb-3">
-                <label for="title" class="form-label lead">Date</label>
-                <input type="date" class="form-control" id="date" placeholder="date">
-            </div>
-            <div class="w-50 mb-3">
-                <label for="title" class="form-label lead">Day</label>
+{{--            <div class="mb-3">--}}
+{{--                <label for="title" class="form-label lead">Title</label> <i class="bi bi-pencil-square"></i>--}}
+{{--                <input type="text" class="form-control w-50" id="title" name="title"  value="{{$task->title}}">--}}
+{{--            </div>--}}
+{{--            <div class="mb-3">--}}
+{{--                <label for="body" class="form-label lead">Task Details</label>--}}
+{{--                <textarea class="form-control" id="body" rows="3" name="body" >{{$task->body}}</textarea>--}}
+{{--            </div>--}}
 
-                <select class="form-select" aria-label="Default select example">
-                    <option selected disabled>Choose Day ...</option>
-                    <option value="1">Sunday</option>
-                    <option value="2">Monday</option>
-                    <option value="3">Tuesday</option>
-                    <option value="4">Wednseday</option>
-                    <option value="5">Thursday</option>
-                    <option value="6">Friday</option>
-                    <option value="7">Saturday</option>
-                </select>
+{{--            <button type="submit" class="btn btn-info mt-2">Submit</button>--}}
+
+
+        <div style="border: 1px solid ; border-radius: 10px" class="mb-3 bg-dark text-light">
+            <h5 style="font-weight: 600 ; font-size: 2em" class="text-center">Edit Note ...</h5>
+            <div style="border: 1px solid ; border-radius: 5px" class=" m-2 mb-4">
+                <div class="mb-3 px-3 " >
+                    <i class="bi bi-pencil-square"></i><label for="title" class="form-label" style=" font-size: 1.8em">Title</label>
+
+                    <input type="text" class="form-control w-50" id="title" name="title" required maxlength="20" placeholder="Title Note ..."  value="{{$task->title}}">
+                </div>
             </div>
-            <button type="submit" class="btn btn-info mt-2">Submit</button>
+
+            <div style="border: 1px solid ; border-radius: 5px" class=" m-2  mb-3 ">
+                <div class="mb-3 px-3 " >
+                    <label for="body" class="form-label lead">Note Details</label>
+                    <input type="text" class="form-control" id="body" required maxlength="255" name="body" placeholder="Body ..."  value="{{$task->body}}"/>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-info m-2">Submit</button>
+        </div>
+
+
         </form>
-
-
     </section>
 
 

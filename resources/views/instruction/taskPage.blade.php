@@ -37,12 +37,28 @@
     </section>
 
     <section class="py-5 container">
-        <h2 class="text-primary">Note Title :</h2>
-        <h3 class="mx-5"> {{$task->title}}</h3>
-        <h2 class="text-primary">Note:</h2>
-        <h3 class="mx-5"> {{$task->body}}</h3>
-        <h2 class="text-primary">Last Update:</h2>
-        <h3 class="mx-5"> {{$task->updated_at}}</h3>
+        <div style="border: 1px solid ; border-radius: 5px">
+            <div class="bg-dark text-light text-center">
+                <h2 class="text-primary">Note Title </h2>
+            </div>
+                <h3 class="mx-5" style="font-weight: 400 ; font-size: 2em ; color: dodgerblue"> _ {{$task->title}}</h3>
+        </div>
+
+        <div class="mt-2" style="border: 1px solid ; border-radius: 5px">
+            <div class="bg-dark text-light text-center">
+                <h2 style="color: mediumaquamarine ; font-weight: 500">Note</h2>
+            </div>
+        <h3 class="mx-5"  style="font-weight: 400 ; font-size: 2em"> _ {{$task->body}}</h3>
+        </div>
+
+        <div class="mt-2" style="border: 1px solid ; border-radius: 5px">
+            <div class="bg-dark text-light text-center">
+                <h2 class="text-light">Last Update</h2>
+            </div>
+            <p class="mx-5"  style=" color: darkred"> {{$task->updated_at}}</p>
+        </div>
+
+
     </section>
 @endsection
 

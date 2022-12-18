@@ -34,7 +34,7 @@
                         facere natus repudiandae neque placeat debitis laborum corporis
                         accusamus perferendis at.
                     </p>
-                    <button class="btn btn-info">Get started</button>
+                    <a href="/addtask" class="btn btn-info">Get started</a>
                 </div>
                 <img
                     class="d-none d-sm-block img-fluid w-50"
@@ -44,7 +44,11 @@
             </div>
         </div>
     </section>
-
+    <section  class="py-5">
+        <div>
+            <h5 class="text-center display-5">Services</h5>
+        </div>
+    </section>
     <section class="py-5">
         <div class="container">
             <div class="row">
@@ -54,12 +58,12 @@
                             <i class="bi bi-card-checklist text-info"></i>
                         </div>
                         <div class="card-body">
-                            <h3 class="card-title text-info">Check </h3>
+                            <h3 class="card-title text-info">View your Note </h3>
                             <p class="card-text lead">
                                when you finish your work check it.
 
                             </p>
-                            <button class="btn btn-info">Learn more</button>
+                            <a  href="/task" class="btn btn-info">View</a>
                         </div>
                     </div>
                 </div>
@@ -70,11 +74,11 @@
                             <i class="bi bi-pencil-square text-info"></i>
                         </div>
                         <div class="card-body">
-                            <h3 class="card-title text-info">Write your list</h3>
+                            <h3 class="card-title text-info">Write your Note</h3>
                             <p class="card-text lead">
                                 write your activity to do it all day
                             </p>
-                            <button class="btn btn-info">Learn more</button>
+                            <a href="/addtask" class="btn btn-info">Add</a>
                         </div>
                     </div>
                 </div>
@@ -82,6 +86,11 @@
         </div>
     </section>
 
+    <section  class="py-5">
+        <div>
+            <h5 class="text-center display-5">Learn</h5>
+        </div>
+    </section>
 
     <section id="learn" class="py-5">
         <div class="container">
@@ -112,5 +121,32 @@
             </div>
         </div>
     </section>
+    <section  class="py-3">
+            <div>
+                <h5 class="text-center display-5">Footer</h5>
+            </div>
+    </section>
+    <footer  class="py-5  bg-dark text-light" >
+        <div class="container">
+            <div>
+                <p style="color: deepskyblue" class="lead">Created by: <span style="color: mediumaquamarine">Jamil Shayp</span> </p>
+            </div>
+            <div>
+                <p style="color: deepskyblue"> g i t H u b: <a  target="_blank" style="
+                text-decoration: none ;
+                color: cornflowerblue;
+            " href="https://github.com/Eng-alshayp">Eng-alshayp</a>
+                </p>
+            </div>
+            <div>
+                <p style="color: deepskyblue">M y - W e b s i t e: <a  target="_blank" style="
+                text-decoration: none ;
+                color: cornflowerblue;
+            " href="https://eng-alshayp.github.io/website">@Alshayp</a>
+                </p>
+            </div>
+        </div>
+
+    </footer>
 
 @endsection
