@@ -12,6 +12,7 @@
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
+    <link rel="shortcut icon" href="./img/fav.png" type="image/x-icon"  >
 </head>
 <body>
 <nav class="navbar navbar-expand-md navbar-dark bg-dark text-info fixed-top ">
@@ -23,9 +24,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 @yield('nav-link')
-{{--                    <div class="countainer">--}}
-{{--                        <a href="/addtask" class="btn btn-info mb-1">Add Task</a>--}}
-{{--                    </div>--}}
+
             </ul>
         </div>
     </div>

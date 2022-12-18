@@ -19,7 +19,7 @@
                         <img src="./img/addtask.svg" class="img-fluid w-50 h-50" alt="">
                     </div>
                     <div class="col-md p-3">
-                        <h2 class="display-5 text-info "> Write your List</h2>
+                        <h2 class="display-5 text-info "> Write your Note</h2>
                         <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quod placeat quo odit, dignissimos labore minima laboriosam odio eum atque sint, quam debitis harum. Suscipit eius officiis illum accusamus amet!</p>
                     </div>
                 </div>
@@ -31,7 +31,7 @@
         <form action="{{route('task.store')}}" method="post">
             @csrf
             <div style="border: 1px solid ; border-radius: 10px" class="mb-3 bg-dark text-light">
-                <h5 style="font-weight: 600 ; font-size: 2em" class="text-center">Write Note ...</h5>
+                <h5 style="font-weight: 600 ; font-size: 2em" class="text-center text-info">Write Note ...</h5>
                 <div style="border: 1px solid ; border-radius: 5px" class=" m-2 mb-4">
                     <div class="mb-3 px-3 " >
                         <i class="bi bi-pencil-square"></i><label for="title" class="form-label" style=" font-size: 1.8em">Title</label>

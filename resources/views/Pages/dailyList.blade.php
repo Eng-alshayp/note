@@ -31,7 +31,7 @@ Daily List
         <section class="container mb-2">
             <div style="border: 1px solid ; border-radius: 5px 5px 20px 5px">
                 <div class="bg-dark text-light text-center">
-                    <h2 class="text-primary">Notes</h2>
+                    <h2 class="text-info">Notes</h2>
                 </div>
                 <div class="px-2">
                     <h5  style="font-weight: 400 ; font-size: 2em ; "> Title: <span class="text-primary">{{$task->title}}</span> </h5>

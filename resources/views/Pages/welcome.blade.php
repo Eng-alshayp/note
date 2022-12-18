@@ -27,7 +27,7 @@
             <div class="d-sm-flex align-items-center">
                 <div>
                     <h1 class="display-5 text-info">
-                       TO DO LIST
+                       TO DO NOTE
                     </h1>
                     <p class="py-1 lead">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
@@ -101,7 +101,7 @@
                 <div class="col-md p-3">
                     <h2>Learn The Basic</h2>
                     <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quod placeat quo odit, dignissimos labore minima laboriosam odio eum atque sint, quam debitis harum. Suscipit eius officiis illum accusamus amet!</p>
-                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, alias.</p>
+
                 </div>
             </div>
         </div>
@@ -116,7 +116,7 @@
                 <div class="col-md p-3">
                     <h2>Next Learn Basics</h2>
                     <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quod placeat quo odit, dignissimos labore minima laboriosam odio eum atque sint, quam debitis harum. Suscipit eius officiis illum accusamus amet!</p>
-                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, alias.</p>
+
                 </div>
             </div>
         </div>
@@ -129,7 +129,8 @@
     <footer  class="py-5  bg-dark text-light" >
         <div class="container">
             <div>
-                <p style="color: deepskyblue" class="lead">Created by: <span style="color: mediumaquamarine">Jamil Shayp</span> </p>
+                <p style="color: deepskyblue" class="lead">Created by: <a style="text-decoration: none; color: mediumaquamarine ; font-family: Calibri"
+                            href="https://www.instagram.com/jamil_shayp/">JAMIL SHAYP</a> </p>
             </div>
             <div>
                 <p style="color: deepskyblue"> g i t H u b: <a  target="_blank" style="
